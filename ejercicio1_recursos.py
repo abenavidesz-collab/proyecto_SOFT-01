@@ -1,0 +1,82 @@
+#Nombre del archivo (verificacion_combustible.py)
+#Curso (SOFT-01)
+#Nombres de los integrantes (Andres Benavides y Daniel Fezta)
+#Fecha viernes 16 de octubre
+
+#Ejercicio 1: Calculo de recursos necesarios para una mision
+#Descripcion
+#Antes de autorizar una mision, la agencia necesita determinar aproximadamente cuantos recursos
+#seran necesarios para realizar el viaje. 
+#Este ejercicio debe resolverse principalmente mediante flujo secuencial.
+
+#Reserva: toda mision debe transportar 10 unidades adicionales de combustible para
+#emergencias.
+
+RESERVA_COMBUSTIBLE = 10
+
+#Datos solicitados:
+#Nombre de la mision.
+#Cantidad de tripulantes.
+#Cantidad de dias estimados para llegar al destino.
+
+nombre_mision = input("ingrese el nombre de la mision: ")
+cant_tripulantes = int(input("ingrese la cantidad de tripulantes: "))
+dias_viaje = int(input("ingrese la cantidad de dias estimados para el viaje: "))
+
+#Calculos requeridos
+#Combustible de ida: por cada dia de viaje se consumen 8 unidades de combustible.
+
+combustible_ida = dias_viaje * 8
+
+#Combustible de regreso: el viaje de regreso tiene la misma duracion que el de ida y consume tambien 8 unidades
+#por dia.
+
+combustible_regreso = dias_viaje * 8
+
+#Combustible total teniendo en cuenta todos los datos
+
+combustible_total = combustible_ida + combustible_regreso + RESERVA_COMBUSTIBLE
+
+#Oxigeno: cada tripulante consume 2 unidades por dia (solo viaje de ida) mas 5 unidades de
+#emergencia.
+
+oxigeno_requerido = cant_tripulantes * dias_viaje * 2 + 5
+
+#Energia: la nave consume 5 unidades por dia de ida mas 10 unidades para las
+#operaciones de exploracion.
+
+energia_requerida = dias_viaje * 5 + 10
+
+#Provisiones: cada tripulante consume 1 unidad por dia de ida mas 3
+#unidades adicionales.
+
+provisiones_requeridas = dias_viaje * cant_tripulantes + 3
+
+#Salida esperada (ejemplo)
+#Mision: Explorador I
+#Tripulantes: 3
+#Duracion estimada hasta el destino: 5 dias
+#Combustible para llegar: 40 unidades
+#Combustible para regresar: 40 unidades
+#Reserva de combustible: 10 unidades
+#Combustible total requerido: 90 unidades
+#Oxigeno requerido: 35 unidades
+#Energia requerida: 35 unidades
+#Provisiones requeridas: 18 unidades
+
+print (f"""
+{"-" * 15}
+RECURSOS PARA LA MISION:
+{"-" * 15}
+mision: {nombre_mision}
+tripulantes: {cant_tripulantes}
+duracion estimada hasta el destino: {dias_viaje} dias
+{"-" * 15}
+combustible para llegar: {combustible_ida} unidades
+combustible para llegar: {combustible_ida} unidades
+reserva de combustible: {RESERVA_COMBUSTIBLE} unidades
+combustible total requerido: {combustible_total} unidades
+oxigeno requerido: {oxigeno_requerido} unidades
+energia requerida: {energia_requerida} unidades
+provisiones requeridas: {provisiones_requeridas} unidades
+{"-" * 15}""")
