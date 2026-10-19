@@ -16,15 +16,15 @@
 
 COMBUSTIBLE_ADICIONAL = 10
 
-combustible_disponible = int(print("ingrese la cantidad de combustible disponible: "))
-combustible_llegar = int(print("ingrese la cantidad de combustible requerido para llegar: "))
-combustible_regresar = int(print("ingrese la cantidad de de combustible requerido para regresar: "))
-oxigeno_disponible = int(print("ingrese la cantidad de oxigeno disponible: "))
-oxigeno_requerido = int(print("ingrese la cantidad de oxigeno requerido: "))
-energia_diponible = int(print("ingrese la cantidad de energia disponible: "))
-energia_requerida = int(print("ingrese la cantidad de energia requerida: "))
-provisiones_disponibles = int(print("ingrese la cantidad de provisiones disponible: "))
-provisiones_requeridas = int(print("ingrese la cantidad de provisiones requeridas: "))
+combustible_disponible = int(input("Ingrese la cantidad de combustible disponible: "))
+combustible_llegar = int(input("Ingrese la cantidad de combustible requerido para llegar: "))
+combustible_regresar = int(input("Ingrese la cantidad de de combustible requerido para regresar: "))
+oxigeno_disponible = int(input("Ingrese la cantidad de oxigeno disponible: "))
+oxigeno_requerido = int(input("Ingrese la cantidad de oxigeno requerido: "))
+energia_diponible = int(input("Ingrese la cantidad de energia disponible: "))
+energia_requerida = int(input("Ingrese la cantidad de energia requerida: "))
+provisiones_disponibles = int(input("Ingrese la cantidad de provisiones disponible: "))
+provisiones_requeridas = int(input("Ingrese la cantidad de provisiones requeridas: "))
 
 #Cálculo requerido
 #Combustible total requerido = combustible de ida + combustible de regreso + 10
@@ -41,8 +41,8 @@ if (combustible_disponible >= combustible_requerido and
     oxigeno_disponible >= oxigeno_requerido and 
     energia_diponible >= energia_requerida and
     provisiones_disponibles >= energia_requerida):
-    print ("lanzamiento autorizado")
+    print ("Lanzamiento autorizado")
 else:
-    print ("lanzamiento denegado, la mision debe ser revisada")
+    print ("Lanzamiento denegado, la misión debe ser revisada")
 
 

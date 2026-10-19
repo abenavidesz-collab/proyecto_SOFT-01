@@ -13,9 +13,9 @@
 #Cantidad de combustible requerida para regresar.
 
 RESERVA_EMERGENCIA = 10
-combustible_disponible = int(input("ingrese la cantidad de combustible disponible: "))
-combustible_ida = int(input("ingrse la cantidad de combistible requerido para llegar al destino: "))
-combustible_vuelta = int(input("ingrse la cantidad de combustible requerido para regresar: "))
+combustible_disponible = int(input("Ingrese la cantidad de combustible disponible: "))
+combustible_ida = int(input("Ingrse la cantidad de combustible requerido para llegar al destino: "))
+combustible_vuelta = int(input("Ingrse la cantidad de combustible requerido para regresar: "))
 
 #Cálculos requeridos
 #Debe considerarse una reserva de emergencia de 10 unidades.
@@ -29,7 +29,7 @@ combustible_adicional = combustible_disponible - combustible_requerido
 #Si el combustible adicional es menor que 10 unidades, se debe mostrar únicamente en ese caso:
 #“Advertencia: el margen adicional de combustible es bajo.”
 
-if 10 > combustible_adicional:
+if combustible_adicional < RESERVA_EMERGENCIA:
     print (f""" 
     {"-" * 55}
     Advertencia: el margen adicional de combustible es bajo.

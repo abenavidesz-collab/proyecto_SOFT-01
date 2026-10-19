@@ -13,10 +13,10 @@
 #• Cantidad de provisiones disponibles.
 #• Cantidad de provisiones requeridas.
 
-oxigeno_disponible = int(input("ingrese la catidad de oxigeno disponible: "))
-oxigeno_requerido = int(input("ingrese la cantidad de oxigeno requerido: "))
-provisiones_disponibles = int(input("ingrese la cantidad de provisiones disponibles: "))
-provisiones_requeridas = int(input("ingrese la cantidad de provisiones requeridas: "))
+oxigeno_disponible = int(input("Ingrese la catidad de óxigeno disponible: "))
+oxigeno_requerido = int(input("Ingrese la cantidad de óxigeno requerido: "))
+provisiones_disponibles = int(input("Ingrese la cantidad de provisiones disponibles: "))
+provisiones_requeridas = int(input("Ingrese la cantidad de provisiones requeridas: "))
 
 #Regla de decisión
 #La misión podrá brindar soporte adecuado a la tripulación únicamente cuando el oxígeno disponible
@@ -28,6 +28,6 @@ provisiones_requeridas = int(input("ingrese la cantidad de provisiones requerida
 #No se debe indicar todavía cuál recurso específico presenta el problema.
 
 if oxigeno_disponible >= oxigeno_requerido and provisiones_disponibles >= provisiones_requeridas:
-    print ("la nave posee recursos suficientes para la tripulacion")
+    print ("La nave posee recursos suficientes para la tripulación")
 else:
-    print ("la nave no posee los recursos suficientes para la tripulacion")
+    print ("La nave no posee los recursos suficientes para la tripulación")

@@ -26,9 +26,9 @@ PROVISIONES_ADICIONALES = 3
 #Cantidad de tripulantes.
 #Cantidad de dias estimados para llegar al destino.
 
-nombre_mision = input("ingrese el nombre de la mision: ")
-cant_tripulantes = int(input("ingrese la cantidad de tripulantes: "))
-dias_viaje = int(input("ingrese la cantidad de dias estimados para el viaje: "))
+nombre_mision = input("Ingrese el nombre de la misión: ")
+cant_tripulantes = int(input("Ingrese la cantidad de tripulantes: "))
+dias_viaje = int(input("Ingrese la cantidad de dias estimados para el viaje: "))
 
 #Calculos requeridos
 #Combustible de ida: por cada dia de viaje se consumen 8 unidades de combustible.
@@ -75,15 +75,14 @@ print (f"""
 {"-" * 15}
 RECURSOS PARA LA MISION:
 {"-" * 15}
-mision: {nombre_mision}
-tripulantes: {cant_tripulantes}
-duracion estimada hasta el destino: {dias_viaje} dias
+Misión: {nombre_mision}
+Tripulantes: {cant_tripulantes}
+Duración estimada hasta el destino: {dias_viaje} dias
 {"-" * 15}
-combustible para llegar: {combustible_ida} unidades
-combustible para llegar: {combustible_ida} unidades
-reserva de combustible: {RESERVA_COMBUSTIBLE} unidades
-combustible total requerido: {combustible_total} unidades
-oxigeno requerido: {oxigeno_requerido} unidades
-energia requerida: {energia_requerida} unidades
-provisiones requeridas: {provisiones_requeridas} unidades
+Combustible para llegar: {combustible_ida} unidades
+Reserva de combustible: {RESERVA_COMBUSTIBLE} unidades
+Combustible total requerido: {combustible_total} unidades
+Oxígeno requerido: {oxigeno_requerido} unidades
+Energia requerida: {energia_requerida} unidades
+Provisiones requeridas: {provisiones_requeridas} unidades
 {"-" * 15}""")
