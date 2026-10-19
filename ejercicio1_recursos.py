@@ -83,6 +83,6 @@ Combustible para llegar: {combustible_ida} unidades
 Reserva de combustible: {RESERVA_COMBUSTIBLE} unidades
 Combustible total requerido: {combustible_total} unidades
 Oxígeno requerido: {oxigeno_requerido} unidades
-Energia requerida: {energia_requerida} unidades
+Energía requerida: {energia_requerida} unidades
 Provisiones requeridas: {provisiones_requeridas} unidades
 {"-" * 15}""")

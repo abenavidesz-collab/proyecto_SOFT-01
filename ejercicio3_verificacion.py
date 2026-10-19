@@ -13,8 +13,8 @@
 #• Cantidad de provisiones disponibles.
 #• Cantidad de provisiones requeridas.
 
-oxigeno_disponible = int(input("Ingrese la catidad de óxigeno disponible: "))
-oxigeno_requerido = int(input("Ingrese la cantidad de óxigeno requerido: "))
+oxigeno_disponible = int(input("Ingrese la catidad de oxígeno disponible: "))
+oxigeno_requerido = int(input("Ingrese la cantidad de oxígeno requerido: "))
 provisiones_disponibles = int(input("Ingrese la cantidad de provisiones disponibles: "))
 provisiones_requeridas = int(input("Ingrese la cantidad de provisiones requeridas: "))
 
