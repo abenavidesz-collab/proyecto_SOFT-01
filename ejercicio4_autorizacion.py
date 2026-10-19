@@ -1,3 +1,8 @@
+#Nombre del archivo (ejercicio4_autorizacion.py)
+#Curso (SOFT-01)
+#Nombres de los integrantes (Andres Benavides y Daniel Fezta)
+#Fecha viernes 16 de octubre
+
 #Descripción
 #La agencia necesita realizar una verificación general antes de permitir el lanzamiento. Se debe
 #utilizar una estructura condicional doble sin condicionales anidadas.
@@ -34,10 +39,10 @@ combustible_requerido = combustible_llegar + combustible_regresar + COMBUSTIBLE_
 
 if (combustible_disponible >= combustible_requerido and 
     oxigeno_disponible >= oxigeno_requerido and 
-    energia_diponible >= energia_requerida
+    energia_diponible >= energia_requerida and
     provisiones_disponibles >= energia_requerida):
     print ("lanzamiento autorizado")
-elif:
+else:
     print ("lanzamiento denegado, la mision debe ser revisada")
-    
+
 

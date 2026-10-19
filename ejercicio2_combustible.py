@@ -1,4 +1,4 @@
-#Nombre del archivo (verificacion_combustible.py)
+#Nombre del archivo (ejercicio2_combustible.py)
 #Curso (SOFT-01)
 #Nombres de los integrantes (Andres Benavides y Daniel Fezta)
 #Fecha viernes 16 de octubre
