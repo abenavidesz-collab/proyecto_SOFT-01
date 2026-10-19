@@ -29,7 +29,7 @@ combustible_adicional = combustible_disponible - combustible_requerido
 #Si el combustible adicional es menor que 10 unidades, se debe mostrar únicamente en ese caso:
 #“Advertencia: el margen adicional de combustible es bajo.”
 
-if combustible_adicional < RESERVA_EMERGENCIA:
+if combustible_adicional <= RESERVA_EMERGENCIA:
     print (f""" 
     {"-" * 55}
     Advertencia: el margen adicional de combustible es bajo.
